@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} Admin Panel {% endblock %}
+{% block main %}
+	{% if session['type']=='admin' %}
+		<!-- user activation/deactivation -->
+		<div id="users_table">
+			<input type="submit" class="activate" value="Render Users Data" onClick="getUsers()">
+			<center>
+				<div id="users_data">
+				</div>
+			</center>
+		</div>
+		<br><br>
+		<!-- intents add/delete for chatbot -->
+		<div id="intents">
+			<input type="submit" class="activate" value="Render ChatBot Training Data" onClick="getIntents()">
+			<center>
+			<div id="intents_data"></div>
+			</center>			
+		</div>
+		<br><br>
+		<!-- hospitals add/delete for hospital recommendation -->
+		<div id="ventures">
+			<center>
+			<table id="add_venture" border="1px." padding="3px.">
+				<tr style="background-color : blue;">
+					<th>Name</th>
+					<th>Location</th>
+					<th>State</th>
+					<th>District</th>
+					<th>Pincode</th>
+					<th>Latitude</th>
+					<th>Longitude</th>
+					<th>Specilaization</th>
+					<th>No of Beds</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td><input type="text" id="Vname" name="Vname" placeholder="venture name"></td>
+					<td><input type="text" id="Vlocation" name="Vlocation" placeholder="location"></td>
+					<td><input type="text" id="Vstate" name="Vstate" placeholder="state"></td>
+					<td><input type="text" id="Vdistrict" name="Vdistrict" placeholder="district"></td>
+					<td><input type="text" id="Vpincode" name="Vpincode" placeholder="pincode"></td>
+					<td><input type="text" id="Vlatitude" name="Vlatitude" placeholder="latitude"></td>
+					<td><input type="text" id="Vlongitude" name="Vlongitude" placeholder="longitude"></td>
+					<td><input type="text" id="spec" name="spec" placeholder="Specilaization"></td>
+					<td><input type="text" id="n_beds" name="n_beds" placeholder="n_beds"></td>
+					<td><input type="submit" class="activate" value="Add" onClick="add_venture()"><br><br><input type="submit" class="deactivate" value="Delete" onClick="del_venture()"></td>
+				</tr>
+				
+			</table>
+			</center>
+			<br><br><br><br><br><br>
+		</div>
+	{% else %}
+		<!-- flag unauthorized access -->
+		<script>window.location.href="{{ url_for('HomePage') }}"; </script>
+	{% endif %}
+{% endblock %}

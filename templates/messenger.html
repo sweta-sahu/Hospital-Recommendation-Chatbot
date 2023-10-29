@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %} Help desk {% endblock %}
+{% block main %}
+{% if session['username'] %}
+<center>
+<div class="bg">
+<div class="chatbox">
+	<div class="chathead">
+		<div class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/SUPPORT_PIC/bot.jpg" class="profile">&nbsp;&nbsp;&nbsp;MedDesk
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button id="close"><a href="{{ url_for('HomePage') }}">X</a></button></div>
+		<br><br><br><br>
+		<div class="chatlets" id="chatlets"></div>
+		<br>
+		<table cellpadding="2px." border="0px.">
+			<tr>
+				<td><textarea placeholder="Type your message here!" class="msg" name="msg" id="msg"></textarea></td>
+				<td>&nbsp;&nbsp;<input type="submit" value="Send" class="send_btn" onClick="chat_post();"></td>
+			</tr>
+		</table>
+		</div>
+ 
+	</div>
+<br>
+</div>
+</center>
+{% else %}
+<script>window.location.href="{{ url_for('login') }}"; </script>
+{% endif %}
+{% endblock %}

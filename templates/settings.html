@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} Settings {% endblock %}
+{% block main %}
+
+<!-- change password -->
+<!-- change username -->
+<!-- change profile photo -->
+<style>
+    td,tr {
+        background-color: #434343;
+        color: white;
+        padding : 20px;
+    }
+    table{
+    background-color: #434343;
+    color: white;    
+	border-style: groove;
+	border-right-color:grey;
+	border-bottom-width: 10px;
+	border-right-width: 10px;
+	border-radius:20px;
+	border-bottom-color:grey;
+	border-top-color:orange;
+    }
+    </style>
+<center>
+    <br><br><br><br><br>
+    <font color="white"><b>Type of data you want to change : </b></font>&nbsp;&nbsp;&nbsp;&nbsp;
+<select id="mode" onChange="loadOpt()">
+<option value="none">Select</option>
+<option value="pass">Password</option>
+<option value="uname">User Name</option>
+<option value="profpic">Profile Picture</option>
+</select>
+<br><br><br>
+<div id="cc"></div>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock %}
+

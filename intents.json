@@ -1,0 +1,141 @@
+{
+"intents": 
+	[
+	{
+		"tag": "greeting", 
+		"pattern": ["Hi", "Hey there!", "Hello"], 
+		"responses": ["Hi there! How may I help You?", "Hello buddy! What can I do for you?", "Hola! Tell me What can I do for you?"], 
+		"action": "", 
+		"context_set": ""
+	},
+	 
+	{
+		"tag": "goodbye", 
+		"pattern": ["bye", "see you later!", "Good bye!", "I am leaving", "have a good day"], 
+		"responses": ["nice talking to you!", "Hope you are satisfied with my service!"], 
+		"action": "", 
+		"context_set": ""
+	},
+	 
+	{
+		"tag": "name", 
+		"pattern": ["Whats your name?", "what should i call you?", "your name?", "may i know your name?", "tell me your name"], 
+		"responses": ["My name is MedBot.", "You can call me MedBot."], 
+		"action": "", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "venue", 
+		"pattern": ["Where do you live?", "whats your current location?", "your home?"], 
+		"responses": ["I live in a cozy server."], 
+		"action": "", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "start_conv1", 
+		"pattern": ["I want to know?", "I have a query!", "what can you do?", "can you find?", "I am suffering", "I am not feeling well."], 
+		"responses": ["I can find hospitals nearby you based on the information you provide to me."], 
+		"action": "", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "physician", 
+		"pattern": ["I am suffering from fever", "fever", "cough and cold", "sour throat"], 
+		"responses": ["Finding general physician nearby you."], 
+		"action": "General Physician", 
+		"context_set": ""
+	}, 
+		
+	{
+		"tag": "Gastroenterologist", 
+		"pattern": ["vomitting", "stomach pain", "vommiting and gas and stomach ache", "digestion problem"], 
+		"responses": ["Finding Gastroenterologist nearby you!"], 
+		"action": "Gastroenterologist", 
+		"context_set": ""
+	}, 
+	
+	{
+		"tag": "gynac", 
+		"pattern": ["pregnancy", "waterbroke while pregnant", " i am in labour"], 
+		"responses": ["Finding best maternity care center nearby you"], 
+		"action": "Gynaecologist & Obstetrician",
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "neuro", 
+		"pattern": ["Head ache", "headache", "pain across forehead"], 
+		"responses": ["Finding neurologist nearby you!"], 
+		"action": "Neurologist", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "ent", 
+		"pattern": ["Ear pain", "throat pain", "nose ailment", "pain in nose"], 
+		"responses": ["Finding ENT specialist nearby you!"], 
+		"action": "ENT", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "orthopedist", 
+		"pattern": ["bone fracture", "fracture", "broken leg", "broken bone", "knee pain", "joint pain"], 
+		"responses": ["Finding orthopedist specialist nearby you!"], 
+		"action": "Orthopedist", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "dentist", 
+		"pattern": ["Tooth ache", "toothache", "pain in teeth", "tooth disaligned", "cavity"], 
+		"responses": ["Finding dentist nearby you!"], 
+		"action": "Dentist", 
+		"context_set": ""
+	}, 
+	
+	{
+		"tag": "Dermatologist", 
+		"pattern": ["I have Rashes", "redness on skin", "i have skin infection", "fungal infection"], 
+		"responses": ["Finding Dermatologist nearby you!"], 
+		"action": "Dermatologist", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "Cardiologist", 
+		"pattern": ["chest pain", "i have cholestrol", "i have blood pressure", "i am suffereing from bp", "high bp", "low bp"], 
+		"responses": ["Finding Cardiologist nearby you!"], 
+		"action": "Cardiologist", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "Diabetologist", 
+		"pattern": ["Diabetes", "i have Diabetes", "blood sugar", "i am suffereing from sugar", "high sugar", "low sugar"], 
+		"responses": ["Finding Diabetologist nearby you!"], 
+		"action": "Diabetologist", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "Paediatrician", 
+		"pattern": ["child doctor", "my child is having fever", "vaccination", "vaccinating my child"], 
+		"responses": ["Finding Paediatrician nearby you!"], 
+		"action": "Paediatrician", 
+		"context_set": ""
+	}, 
+
+	{
+		"tag": "Ophthalmologists", 
+		"pattern": ["eye doctor", "eye clinic near me", "eye redness", "pain in eyes", "cataract"], 
+		"responses": ["Finding Ophthalmologist nearby you!"], 
+		"action": "Ophthalmologist", 
+		"context_set": ""
+	}
+]
+
+}

@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% block title %} Covid-19 Facilities in States/UT {% endblock %}
+{% block main %}
+<center>
+<font color="white"><h2>Covid-19 Facilities in States/Union Territories</h2></font>
+<font color="red"><h3><b>Disclaimer</b></h3></font>
+<font color="white"><p>Public is hereby informed to call the Call centre at the Hospital / District / State level to know the availability of beds and ventilators before proceeding to the hospitals concerned
+for their requirement.</p>
+<p>The list of hospitals earmarked by the States/UTs along with the State specific help line
+numbers is given below:</p>
+</font>
+<br><br>
+<!--<div id="links"></div>
+<script>showLinks();</script> -->
+<table border="1px.">
+	<tr style="background-color : blue;">
+		<th>Sr No</th>
+		<th><center>State/UT</center></th>
+		<th>Helpline Number</th>
+		<th><center>State Website link for earmarked COVID facilties</center></th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Andaman & Nicobar Islands</td>
+		<td>03192-232102</td>
+		<td><a href="https://dhs.andaman.gov.in/NewEvents/249.jpeg" target="_blank">https://dhs.andaman.gov.in/NewEvents/249.jpeg</a></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Andhra Pradesh</td>
+		<td>0866-2410978</td>
+		<td><a href="http://hmfw.ap.gov.in/COVID-19%20IEC/COVID-19%20Hospitals.pdf" target="_blank">http://hmfw.ap.gov.in/COVID-19%20IEC/COVID-19%20Hospitals.pdf</a></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Arunachal Pradesh</td>
+		<td>9436055743</td>
+		<td><a href="http://nrhmarunachal.gov.in/covid_19_IEC.html" target="_blank">http://nrhmarunachal.gov.in/covid_19_IEC.html</a></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Assam</td>
+		<td>6913347770</td>
+		<td><a href="https://nhm.assam.gov.in/portlet-innerpage/dedicated-covid-hospitals" target="_blank">https://nhm.assam.gov.in/portlet-innerpage/dedicated-covid-hospitals</a></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Bihar</td>
+		<td>104</td>
+		<td><a href="http://statehealthsocietybihar.org/" target="_blank">http://statehealthsocietybihar.org/</a></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Chandigarh</td>
+		<td>9779558282</td>
+		<td><a href="http://chdcovid19.in/" target="_blank">http://chdcovid19.in/</a></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Chhattisgarh</td>
+		<td>104</td>
+		<td><a href="http://cghealth.nic.in/cghealth17/" target="_blank">http://cghealth.nic.in/cghealth17/</a></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Dadra and Nagar Haveli and Daman</td>
+		<td>104</td>
+		<td><a href="http://dnh.nic.in/Docs/COVID19/COVID19Health_Fac08052020.pdf" target="_blank">http://dnh.nic.in/Docs/COVID19/COVID19Health_Fac08052020.pdf</a></td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>Delhi</td>
+		<td>011-22307145</td>
+		<td><a href="https://coronabeds.jantasamvad.org/" target="_blank">https://coronabeds.jantasamvad.org/</a></td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>Goa</td>
+		<td>104</td>
+		<td><a href="https://nhm.goa.gov.in/corona-virus-important- links-iec/" target="_blank">https://nhm.goa.gov.in/corona-virus-important- links-iec/</a></td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>Gujarat</td>
+		<td>104</td>
+		<td><a href="https://nrhm.gujarat.gov.in/cir-noti-covid-19.htm" target="_blank">https://nrhm.gujarat.gov.in/cir-noti-covid-19.htm</a></td>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td>Haryana</td>
+		<td>8558893911</td>
+		<td><a href="http://nhmharyana.gov.in/page.aspx?id=208" target="_blank">http://nhmharyana.gov.in/page.aspx?id=208</a></td>
+	</tr>
+	<tr>
+		<td>13</td>
+		<td>Himachal Pradesh</td>
+		<td>104</td>
+		<td><a href="http://www.nrhmhp.gov.in/content/covid-health-facilities" target="_blank">http://www.nrhmhp.gov.in/content/covid-health-facilities</a></td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>Jammu and Kashmir</td>
+		<td>01912520982, <br>0194-2440283</td>
+		<td><a href="https://www.jknhm.com/covidfacilities.php" target="_blank">https://www.jknhm.com/covidfacilities.php</a></td>
+	</tr>
+	<tr>
+		<td>15</td>
+		<td>Jharkhand</td>
+		<td>104</td>
+		<td><a href="http://jrhms.jharkhand.gov.in/FileUploaded%20By%20User/DCovid_Hospitals.pdf" target="_blank">http://jrhms.jharkhand.gov.in/FileUploaded%20By%20User/DCovid_Hospitals.pdf</a></td>
+	</tr>
+	<tr>
+		<td>16</td>
+		<td>Karnataka</td>
+		<td>104</td>
+		<td><a href="https://karunadu.karnataka.gov.in/hfw/nhm/pages/home.aspx" target="_blank">https://karunadu.karnataka.gov.in/hfw/nhm/pages/home.aspx</a></td>
+	</tr>
+	<tr>
+		<td>17</td>
+		<td>Kerala</td>
+		<td>0471-2552056</td>
+		<td><a href="http://arogyakeralam.gov.in/2020/03/25/guidelines/" target="_blank">http://arogyakeralam.gov.in/2020/03/25/guidelines/</a></td>
+	</tr>
+	<tr>
+		<td>18</td>
+		<td>Ladakh</td>
+		<td>1982256462</td>
+		<td><a href="https://leh.nic.in/notice/covid19-hospital/" target="_blank">https://leh.nic.in/notice/covid19-hospital/</a></td>
+	</tr>
+	<tr>
+		<td>19</td>
+		<td>Lakshadweep</td>
+		<td>104</td>
+		<td><a href="https://cdn.s3waas.gov.in/s358238e9ae2dd305d 79c2ebc8c1883422/uploads/2020/05/2020051228-1.pdf" target="_blank">https://cdn.s3waas.gov.in/s358238e9ae2dd305d 79c2ebc8c1883422/uploads/2020/05/2020051228-1.pdf</a></td>
+	</tr>
+	<tr>
+		<td>20</td>
+		<td>Madhya Pradesh</td>
+		<td>104</td>
+		<td><a href="https://www.nhmmp.gov.in/CovidInformation.aspx" target="_blank">https://www.nhmmp.gov.in/CovidInformation.aspx</a></td>
+	</tr>
+	<tr>
+		<td>21</td>
+		<td>Maharashtra</td>
+		<td>020-26127394</td>
+		<td><a href="https://arogya.maharashtra.gov.in/1177/Dedicated-COVID-Facilities-Status" target="_blank">https://arogya.maharashtra.gov.in/1177/Dedicated-COVID-Facilities-Status</a></td>
+	</tr>
+	<tr>
+		<td>22</td>
+		<td>Manipur</td>
+		<td>3852411668</td>
+		<td><a href="http://nrhmmanipur.org/?page_id=2602" target="_blank">http://nrhmmanipur.org/?page_id=2602</a></td>
+	</tr>
+	<tr>
+		<td>23</td>
+		<td>Meghalaya</td>
+		<td>108</td>
+		<td><a href="http://meghalayaonline.gov.in/covid/images/materials/hospitals.pdf" target="_blank">http://meghalayaonline.gov.in/covid/images/materials/hospitals.pdf</a></td>
+	</tr>
+	<tr>
+		<td>24</td>
+		<td>Mizoram</td>
+		<td>102</td>
+		<td><a href="http://nhmmizoram.org/page?id=202" target="_blank">http://nhmmizoram.org/page?id=202</a></td>
+	</tr>
+	<tr>
+		<td>25</td>
+		<td>Nagaland</td>
+		<td>7005539653</td>
+		<td><a href="http://nhmnagaland.in/Notification_file_path/D edicated%20COVID%20Hospitals%20in%20Nagaland.pdf" target="_blank">http://nhmnagaland.in/Notification_file_path/D edicated%20COVID%20Hospitals%20in%20Nagaland.pdf</a></td>
+	</tr>
+	<tr>
+		<td>26</td>
+		<td>Odisha</td>
+		<td>9439994859</td>
+		<td><a href="https://statedashboard.odisha.gov.in/" target="_blank">https://statedashboard.odisha.gov.in/</a></td>
+	</tr>
+	<tr>
+		<td>27</td>
+		<td>Puducherry</td>
+		<td>104</td>
+		<td><a href="https://health.py.gov.in/sites/default/files/NEET-PDF/Categorisation%20of%20covid%20facilities.pdf" target="_blank">https://health.py.gov.in/sites/default/files/NEET-PDF/Categorisation%20of%20covid%20facilities.pdf</a></td>
+	</tr>
+	<tr>
+		<td>28</td>
+		<td>Punjab</td>
+		<td>104</td>
+		<td><a href="http://pbhealth.gov.in/" target="_blank">http://pbhealth.gov.in/</a></td>
+	</tr>
+	<tr>
+		<td>29</td>
+		<td>Rajasthan</td>
+		<td>0141-2225624</td>
+		<td><a href="http://rajswasthya.nic.in/PDF/COvid%20Facility%20Rajasthan.pdf" target="_blank">http://rajswasthya.nic.in/PDF/COvid%20Facility%20Rajasthan.pdf</a></td>
+	</tr>
+	<tr>
+		<td>30</td>
+		<td>Sikkim</td>
+		<td>104</td>
+		<td><a href="https://www.covid19sikkim.org/" target="_blank">https://www.covid19sikkim.org/</a></td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td>Tamil Nadu</td>
+		<td>044-29510500</td>
+		<td><a href="https://stopcorona.tn.gov.in/%e0%ae%ae%e0%a f%81%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%95%e0%ae%b5%e0%ae% b2%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8d/" target="_blank">https://stopcorona.tn.gov.in/%e0%ae%ae%e0%a f%81%e0%ae%95%e0%af%8d%e0%ae%95%e0% <br>ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%95%e0%ae%b5%e0%ae% b2%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8d/</a></td>
+	</tr>
+	<tr>
+		<td>32</td>
+		<td>Telangana</td>
+		<td>104</td>
+		<td><a href="https://www.chfw.telangana.gov.in/covid_hospitals.html" target="_blank">https://www.chfw.telangana.gov.in/covid_hospitals.html</a></td>
+	</tr>
+	<tr>
+		<td>33</td>
+		<td>Tripura</td>
+		<td>0381-2315879</td>
+		<td><a href="http://tripuranrhm.gov.in/home/0905202001.pdf" target="_blank">http://tripuranrhm.gov.in/home/0905202001.pdf</a></td>
+	</tr>
+	<tr>
+		<td>34</td>
+		<td>Uttar Pradesh</td>
+		<td>18001805145</td>
+		<td><a href="https://updgmh-covid19.maps.arcgis.com/apps/opsdashboard/in dex.html#/bfc888151feb48928a4f6885ca20e83c" target="_blank">https://updgmh- covid19.maps.arcgis.com/apps/opsdashboard/in dex.html#/bfc888151feb48928a4f6885ca20e83c</a></td>
+	</tr>
+	<tr>
+		<td>35</td>
+		<td>Uttarakhand</td>
+		<td>104</td>
+		<td><a href="https://health.uk.gov.in/pages/view/102-dedicated-covid-facilities-in-state" target="_blank">https://health.uk.gov.in/pages/view/102-dedicated-covid-facilities-in-state</a></td>
+	</tr>
+	<tr>
+		<td>36</td>
+		<td>West Bengal</td>
+		<td>1800313444222, <br>03323412600</td>
+		<td><a href="https://www.wbhealth.gov.in/uploaded_files/corona/Notification___Revised___67_Covid_Hospital___30.04_.2020_.pdf" target="_blank">https://www.wbhealth.gov.in/uploaded_files/corona/Notification___Revised___67_Covid_Hospital___30.04_.2020_.pdf</a></td>
+	</tr>
+</table>
+<br><br>
+<font color="white"><h4>Central Helpline Number for corona-virus: -<b> +91-11-23978046 </b></h4></font>
+<font color="white"><h4>Toll Free -<b> 1075</b></h4></font>
+</center>
+{% endblock %}

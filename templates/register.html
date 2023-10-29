@@ -1,0 +1,56 @@
+
+{% if session['username'] %}
+{{ redirect(url_for('HomePage')) }}
+{% endif %}
+
+
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+{% block main %}
+
+<style>
+    table,td,tr {
+        background-color: #434343;
+        color : white;
+    }
+    </style>
+<div class="register-form">
+<br><br><br>
+<center>
+<form class="form1"  method="post" action="registerBack" enctype="multipart/form-data" onSubmit="return validate()">
+<table> 
+<tr>
+<td style="text-align:center"><label> <font color="white">NAME:</font></label></td><td><input type="text" id="userId" name="userId" placeholder=" Username" onChange="validate()" required></td><td><small id="idcheck" class="text-muted">
+    <font color="blue">Length of user name should be in between 5-20 characters!</font>
+    </span></td>
+</tr>
+<tr>
+<td style="text-align:center"><label> <font color="white">PASSWORD:</font></label></td><td><input type="password" id="password" name="password" placeholder=" Password" onChange="validate()" required></td><td><small id="passcheck" class="text-muted">
+     <font color="blue"> Length of Password should be in between 6-15 characters!</font>
+    </small></td>
+</tr>
+<tr>
+<td style="text-align:center"><label> <font color="white">EMAIL-ADDRESS:</font></label></td><td><input type="email" id="email" name="email" placeholder=" Email" onChange="validate()" required></td>
+<td><small id="emailcheck" class="text-muted">
+   <font color="blue"> Email should be of the form sample@example.com</font> 
+    </small></td>
+
+</tr>
+<tr>
+<td style="text-align:center"><label> <font color="white">PROFILE PHOTO :</font></label></td><td><input type="file" id="profilePic" name="profilePic" placeholder=" profilePic" onChange="validate()" required></td>
+<td><small id="filecheck" class="text-muted">
+    <font color="blue">Only JPEG, JPG, PNG and GIF formats are supported!</font>
+    </small></td>
+</tr>
+<tr>
+<td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<input type="submit" value="register" class="activate">&nbsp;
+&nbsp;&nbsp;&nbsp;<input type="reset" value="reset" class="deactivate"></td>
+</tr>
+</table>
+</form>
+</center>
+</div>
+
+
+{% endblock %}

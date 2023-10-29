@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Our ventures {% endblock %}
+{% block main %}
+<!-- tabulated ventures list -->
+<center>
+<font color="white"><b>Search pattern</b></font>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="pattern" onChange="showVenture()" placeholder="Type search keywords"><br><br>
+<div id="vents"></div>
+<script>showVenture();</script>
+</center>
+{% endblock %}
