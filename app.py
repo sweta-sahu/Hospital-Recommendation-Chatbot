@@ -9,8 +9,8 @@ from datetime import datetime
 import gmaps
 from ipywidgets.embed import embed_minimal_html
 app=Flask(__name__)
-app.secret_key='QwErTY9934@123'
-gmaps.configure(api_key='AIzaSyDFHxoMv_gH0mb-tgxpRs7k-doEx8l-jKU')
+app.secret_key='' #place your app secret
+gmaps.configure(api_key='') #place your google api key
 @app.route('/')
 def HomePage():
 	return render_template('index.html')

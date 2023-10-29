@@ -3,3 +3,4 @@ credential.txt
 credentials.json
 token.pickle
 model.h5
+.vscode
